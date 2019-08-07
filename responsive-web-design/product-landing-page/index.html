@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <style>
+      body {
+        background-color: #EEEEEE;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        font-family: Geneva, Tahoma, sans-serif;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      a {
+        text-decoration: solid;
+        color: inherit;
+        font-size: medium;
+      }
+
+      nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      input[type="email"] {
+        width:20%;
+        height: 15px;
+        font-size: small;
+      }
+
+      button, input[type="submit"] {
+        font-size: medium;
+        background-color: orange;
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-color: orange;
+        border-radius: 5px;
+        padding: 7px 5px 7px 5px;
+      }
+
+      #features {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+
+      #features > div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #features > div > div {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+      }
+
+      #features h2 {
+        margin-bottom: -10px;
+      }
+
+      i {
+        color: orange;
+      }
+
+      #video {
+        margin-bottom: 40px;
+      }
+
+      #pricing {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+      }
+
+      .pricing-item {
+        display: flex;
+        flex-direction: column;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        width: 25%;
+        align-items: center;
+        justify-content: space-between;
+        height: 300px;
+      }
+
+      .pricing-item > .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+        width: 100%;
+      }
+
+      .pricing-item > p {
+        width: 80%;
+        text-align: center;
+      }
+
+      footer {
+        width: 60%;
+        background-color: lightgray;
+        height: 80px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+      }
+
+      footer div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        align-items: center;
+      }
+
+      footer p {
+        font-size: small;
+      }
+
+      @media(min-width: 500px) {
+        footer div {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" width="400" height="50" alt="Company Logo" />
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#video" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Handcrafted, home-made masterpieces</h1>
+
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <input id="email" type="email" name="email" placeholder="Enter you email address" required />
+
+        <input id="submit" type="submit" value="GET STARTED" />
+      </form>
+
+      <div id="features">
+        <div>
+          <i class="fa fa-fire fa-4x" aria-hidden="true"></i>
+          <div>
+            <h2>Premium Materials</h2>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+        </div>
+        <div>
+          <i class="fa fa-truck fa-4x" aria-hidden="true"></i>
+          <div>
+            <h2>Fast Shipping</h2>
+            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </div>
+        </div>
+        <div>
+          <i class="fa fa-battery-full fa-4x" aria-hidden="true"></i>
+          <div>
+            <h2>Quality Assurance</h2>
+            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+          </div>
+        </div>
+      </div>
+
+      <iframe id="video" width="700" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+      <div id="pricing">
+        <div class="pricing-item">
+          <div class="header">
+            <h3>TENOR TROMBONE</h3>
+          </div>
+          <h2>$600</h2>
+          <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+          <button type="button">SELECT</button>
+        </div>
+
+        <div class="pricing-item">
+          <div class="header">
+            <h3>BASS TROMBONE</h3>
+          </div>
+          <h2>$900</h2>
+          <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+          <button type="button">SELECT</button>
+        </div>
+
+        <div class="pricing-item">
+          <div class="header">
+            <h3>VALVE TROMBONE</h3>
+          </div>
+          <h2>$1200</h2>
+          <p>Plays similar to a Trumpet Great for Jazz Bands Lorem ipsum dolor. Lorem ipsum.</p>
+          <button type="button">SELECT</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+      <p>Copyright 2016, Original Trombones</p>
+    </footer>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
