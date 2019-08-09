@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Portfolio Webpage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet" />
+    <style>
+      body {
+        width: 100%;
+        display: block;
+        margin: 0px;
+        background-color: #3a3d40;
+        padding-top: 70px;
+        height: 100%;
+        font-family: Roboto, sans-serif;
+      }
+
+      #navbar {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        border-bottom-style: solid;
+        border-bottom-width: 1.5px;
+        border-bottom-color: black;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        height: 70px;
+        background-color: #be3144;
+      }
+
+      #navbar div {
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #navbar a {
+        color: white;
+        text-decoration: solid;
+        font-size: x-large;
+        width: 100%;
+      }
+
+      main {
+        height: 100%;
+      }
+
+      section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #welcome-section h1 {
+        font-size: 60px;
+        color: white;
+      }
+
+      #welcome-section i {
+        font-size: xx-large;
+        color: #be3144;
+        margin-top: -30px;
+      }
+
+      #projects {
+        background-color: #45567D;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      #projects h2 {
+        font-size: 45px;
+        color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-bottom-color: white;
+        padding: 8px;
+        padding-top: 35px;
+      }
+
+      #projects div {
+        width: 63%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      .project-tile {
+        width: 375px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: solid;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+      .project-tile img {
+        width: 375px;
+        height: 350px;
+      }
+
+      .project-tile .text {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3a3d40;
+      }
+
+      .project-tile .left-tag {
+        margin-right: 10px;
+        color: orange;
+      }
+
+      .project-tile .right-tag {
+        margin-left: 10px;
+        color: orange;
+      }
+
+      #show_all {
+        background-color: #3a3d40;
+        color: white;
+        font-size: x-large;
+        padding: 10px;
+        border-color: #3a3d40;
+        margin-top: 30px;
+      }
+
+      #contact {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      #contact h1 {
+        font-size: 90px;
+      }
+
+      #contact #headers > h4 {
+        font-size: 20px;
+        margin-top: -50px;
+      }
+
+      #contact #external_links {
+        padding-top: 30px;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: -300px;
+      }
+
+      #contact #headers {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-link {
+        text-decoration: solid;
+        font-size: x-large;
+        color: white;
+      }
+
+      footer {
+      height: 70px;
+        text-align: center;
+        width: 100%;
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-top-color: #be3144;
+      }
+
+      @media(max-width: 600px) {
+        #navbar div {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div>
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="welcome-section">
+        <h1>Hey I am Mimic</h1>
+        <i>a web developer</i>
+      </section>
+
+      <section id="projects">
+        <h2>These are some of my projects</h2>
+        <div>
+          <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project-tile">
+            <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="Tribute Page" />
+            <span class="text"><span class="left-tag"><</span>Tribute Page<span class="right-tag">/></span></span>
+          </a>
+          <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project-tile">
+            <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" alt="Random Quote Machine" />
+            <span class="text"><span class="left-tag"><</span>Random Quote Machine<span class="right-tag">/></span></span>
+          </a>
+          <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project-tile">
+            <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" alt="JavaScript Calculator" />
+            <span class="text"><span class="left-tag"><</span>JavaScript Calculator<span class="right-tag">/></span></span>
+          </a>
+        </div>
+        <div>
+          <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project-tile">
+            <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="Map Data Across the Globe" />
+            <span class="text"><span class="left-tag"><</span>Map Data Across the Globe<span class="right-tag">/></span></span>
+          </a>
+          <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project-tile">
+            <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" alt="Wikipedia Viewer" />
+            <span class="text"><span class="left-tag"><</span>Wikipedia Viewer<span class="right-tag">/></span></span>
+          </a>
+          <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project-tile">
+            <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" alt="Tic Tac Toe Game" />
+            <span class="text"><span class="left-tag"><</span>Tic Tac Toe Game<span class="right-tag">/></span></span>
+          </a>
+        </div>
+
+        <button id="show_all">Show all ></button>
+      </section>
+
+      <section id="contact">
+        <div id="headers">
+          <h1>Let's work together...</h1>
+          <h4>How do you take your coffee?</h4>
+        </div>
+
+        <div id="external_links">
+          <a href="#" target="_blank" class="profile-link"><i class="fab fa-facebook-square"></i> Facebook</a>
+          <a id="profile-link" href="https://github.com/hossamelmansy" target="_blank" class="profile-link"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://twitter.com/hossamelmansy_" target="_blank" class="profile-link"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="malito:hossamelmansy.developer@gmail.com" target="_blank" class="profile-link"><i class="fas fa-at"></i> Send a mail</a>
+          <a href="#" target="_blank" class="profile-link"><i class="fas fa-mobile-alt"></i> Call me</a>
+        </div>
+
+        <footer>
+          <h4>**This is just a fake portfolio. All the projects and contact details given are not real.</h4>
+        </footer>
+      </section>
+    </main>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
